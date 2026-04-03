@@ -1,0 +1,11 @@
+# Tested on Python 3.9-3.12
+# Version ranges are constrained to reduce breaking changes while keeping flexibility.
+
+# Core runtime
+ultralytics>=8.2.0,<9.0.0
+PySide6>=6.6.0,<6.9.0
+opencv-python>=4.8.0,<5.0.0
+numpy>=1.24.0,<2.1.0
+
+# Optional: only needed when database.engine=mysql
+pymysql>=1.1.0,<2.0.0

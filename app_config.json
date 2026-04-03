@@ -1,0 +1,71 @@
+{
+  "_comment": "项目主配置文件。程序启动时默认读取此文件（可用环境变量 APP_CONFIG_PATH 指向其它配置文件）。",
+  "app_name": "Object Detection System",
+
+  "window": {
+    "_comment": "主窗口与图像显示区域尺寸（单位：像素）",
+    "width": 1100,
+    "height": 620,
+    "show_width": 600,
+    "show_height": 480
+  },
+
+  "detection": {
+    "_comment": "YOLO 推理配置",
+    "model_path": "yolov8n.pt",
+    "task": "detect",
+    "conf": 0.25,
+    "iou": 0.7,
+    "device": "auto",
+    "warmup_shape": [48, 48, 3]
+  },
+
+  "database": {
+    "_comment": "数据库配置：默认 sqlite；切换 mysql 时将 engine 改为 mysql 并填写 mysql 子项",
+    "engine": "sqlite",
+    "sqlite_path": "./data/app.db",
+    "mysql": {
+      "_comment": "MySQL 连接参数（仅在 engine=mysql 时生效）",
+      "host": "127.0.0.1",
+      "port": 3306,
+      "user": "root",
+      "password": "",
+      "database": "yolo_app",
+      "charset": "utf8mb4"
+    }
+  },
+
+  "class_names_en": [
+    "lemon",
+    "water_melon",
+    "pear",
+    "banana",
+    "orange",
+    "grape",
+    "apple",
+    "pineapple",
+    "blueberry",
+    "hami_melon",
+    "peach",
+    "pitaya",
+    "strawberry"
+  ],
+
+  "class_names_zh": [
+    "柠檬",
+    "西瓜",
+    "梨",
+    "香蕉",
+    "橙子",
+    "葡萄",
+    "苹果",
+    "菠萝",
+    "蓝莓",
+    "哈密瓜",
+    "桃子",
+    "火龙果",
+    "草莓"
+  ],
+
+  "_class_comment": "类别名称数组顺序必须与模型类别索引一一对应（索引 0 对应第 1 个元素）。"
+}

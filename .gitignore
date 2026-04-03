@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.idea/
+.vscode/
+
+.env
+.venv/
+venv/
+
+data/
+*.db
+
+# local model weights (optional keep/remove based on your preference)
+# weights/*.pt

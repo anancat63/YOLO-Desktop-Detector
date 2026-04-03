@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icon/exit.png</file>
+    <file>icon/user.png</file>
+    <file>icon/camera.png</file>
+    <file>icon/img.png</file>
+    <file>icon/video.png</file>
+  </qresource>
+  <qresource prefix="bgs"/>
+</RCC>
