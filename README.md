@@ -38,7 +38,6 @@ yolo-desktop-detector/
 ├─ .env.example                # 环境变量模板（可选，主要用于 APP_CONFIG_PATH 示例）
 ├─ requirements.txt            # Python 依赖列表
 ├─ README.md                   # 项目说明文档（本文件）
-├─ LICENSE                     # 开源许可证
 │
 ├─ src/
 │  ├─ __init__.py              # Python 包标识
